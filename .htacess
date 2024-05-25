@@ -1,0 +1,10 @@
+# Activar el motor de reescritura
+RewriteEngine On
+
+# Establecer la carpeta base
+RewriteBase /bienesraices/
+
+# Regla de reescritura para redirigir todas las solicitudes a la carpeta base
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /bienesraices/$1 [L]

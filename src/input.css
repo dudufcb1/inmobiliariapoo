@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .menu-link-mobile {
+    @apply block px-2 py-3 text-white transition-colors duration-300;
+  }
+  .menu-link-mobile:hover {
+    @apply bg-slate-400 text-white;
+  }
+  .menu-link-mobile:focus {
+    @apply outline-none ring-2 ring-slate-400;
+  }
+  .menu-link {
+    @apply text-white hover:px-2 hover:text-slate-400 sm:hover:px-0;
+  }
+  .tarjeta-portada-contenedor-principal {
+    @apply h-full w-[290px] overflow-hidden rounded-lg border border-gray-100 bg-slate-300 transition-all duration-300 hover:shadow-lg hover:shadow-slate-400 md:w-[380px] md:hover:scale-105;
+  }
+  .tarjeta-portada-propiedades {
+    @apply h-full w-[290px] overflow-hidden rounded-lg border border-gray-100 bg-slate-300 transition-all duration-300 hover:shadow-lg hover:shadow-slate-400  md:w-[310px] lg:w-[300px];
+  }
+  .iconos-medio {
+    @apply flex  w-56 flex-col justify-center gap-x-8 gap-y-4 text-center lg:w-80;
+  }
+  .boton-naranja {
+    @apply my-6 block h-10 w-full rounded-lg bg-orange-500 p-2 text-center font-semibold text-white hover:bg-orange-400;
+  }
+  .boton-naranja-inline {
+    @apply my-6 block h-10 w-36 rounded-lg bg-orange-500 p-2 text-center font-semibold text-white hover:bg-orange-400;
+  }
+  .alinear-elementos {
+    @apply mx-auto max-w-7xl px-8;
+  }
+  /* Componente para input */
+  .input {
+    @apply w-full rounded-md border border-gray-300 px-4 py-2 focus:border-blue-500 focus:outline-none focus:ring-blue-500;
+  }
+
+  /* Componente para label */
+  .label {
+    @apply block;
+  }
+
+  /* Componente para fieldset */
+  .fieldset {
+    @apply mb-4;
+  }
+
+  /* Componente para legend */
+  .legend {
+    @apply text-lg font-semibold;
+  }
+
+  /* Componente para button */
+  .button {
+    @apply w-full rounded-md bg-green-500 px-4 py-2 text-white hover:bg-green-600;
+  }
+
+  /* Componente para contenedor */
+  .container {
+    @apply mx-auto max-w-md;
+  }
+
+  /* Componente para título */
+  .title {
+    @apply my-4 text-center text-4xl font-thin;
+  }
+  .text-warm {
+    @apply mt-4 block w-auto rounded-md bg-yellow-400 p-2 text-red-800;
+  }
+
+  /* Componente para div alinear elementos */
+}
